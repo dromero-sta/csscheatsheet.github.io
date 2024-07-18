@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<!--Here Starts the Head-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <title>My CSS Selectors & Specificity Cheat Sheet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+</head>
+
+<!--Here Starts the Body-->
+
+<body>
+  <header>
+    <h3 class="myname">Daniel Romero</h3>
+    <p class="date">July, 18 2024</p>
+    <h1>My CSS Selectors Cheat Sheet</h1>
+    <p class="intro">Here is a table of common CSS Selectors & Combinator Selectors</p>
+  </header>
+  <main>
+    <section class="table">
+        <h2>Common CSS Selectors</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Selector</th>
+                    <th>Example</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 
+                        <span class="selector">#id</span>
+                    </td>
+                    <td>#myname</td>
+                    <td>Selects the element with id="myname"</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="selector">.class</span>
+                    </td>
+                    <td>.intro</td>
+                    <td>Selects all elements with class="intro"</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="selector">element.class</span>
+                    </td>
+                    <td>p.intro</td>
+                    <td>Selects only &lt;p&gt; elements with class="intro"</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="selector"> ( * ) </span>
+                    </td>
+                    <td>*</td>
+                    <td>The universal selector (*) selects all HTML elements on the page.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="selector">Element</span>
+                    </td>
+                    <td>p</td>
+                    <td>	Selects all &lt;p&gt; elements/td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="selector">element,element</span>
+                    </td>
+                    <td>div, p</td>
+                    <td>Selects all &lt;div&gt; elements and all &lt;p&gt; elements</td>
+                </tr>
+                
+            </tbody>
+
+
+        </table>
+        
+    </section>
+    <section class="table">
+        <h2>CSS Combinator Selectors</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Selector</th>
+                    <th>Example</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 
+                        <span class="selector">element element</span>
+                    </td>
+                    <td>div p</td>
+                    <td>Selects all &lt;p&gt; elements inside &lt;div&gt; elements</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="selector">element > element</span>
+                    </td>
+                    <td>div > p</td>
+                    <td>Selects all &lt;p&gt; elements where the parent is a &lt;div&gt; element</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="selector">element + element</span>
+                    </td>
+                    <td>div + p</td>
+                    <td>	Selects the first &lt;p&gt; element that are placed immediately after &lt;div&gt; elements</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="selector">element1~element2</span>
+                    </td>
+                    <td>p ~ ul</td>
+                    <td>	Selects every <&lt;l&gt; element that are preceded by a &lt;p&gt; element</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+
+  </main>
+  <footer>
+    <p class="foot">Thank you for reading, feedback is welcome! | @_danromero_</p>
+  </footer>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
